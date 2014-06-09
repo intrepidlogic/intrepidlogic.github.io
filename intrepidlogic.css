@@ -1,0 +1,11 @@
+body {
+    margin-top: 6em;
+}
+
+.navbar-default {
+    background-color: #0099CC;
+}
+
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+}
