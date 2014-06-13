@@ -3,9 +3,42 @@ body {
 }
 
 .navbar-default {
-    background-color: #000000;
+	background-color: #EFEFEF;
 }
 
-.navbar-default .navbar-brand {
-    color: #FFFFFF;
+.row {
+	margin-bottom: 30px;
+}
+
+.app-faq-image {
+	width: 32px;
+	height: 32px;
+	margin-right: 0.5em;
+}
+
+.faq-item-image {
+	width: 32px;
+	height: 32px;
+	margin-right: 0.5em;
+}
+
+.faq-item-heading {
+	font-size: 1.3em;
+	font-weight: bold;
+	border-bottom: 1px;
+	border-bottom-color: #DDDDDD;
+	border-bottom-style: solid;
+	padding-bottom: 0.3em;
+}
+
+.faq-item-text {
+}
+
+#surveyMonkeyInfo {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#surveyMonkeyInfo > iframe {
+	overflow:hidden;
 }
