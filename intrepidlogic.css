@@ -2,6 +2,12 @@ body {
     margin-top: 6em;
 }
 
+@media (min-width: 768px) {
+    .b-col {
+        float: right;
+    }
+}
+
 .navbar-default {
 	background-color: #EFEFEF;
 }
