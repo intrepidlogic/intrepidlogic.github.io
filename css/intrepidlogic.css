@@ -1,19 +1,13 @@
-body {
-    margin-top: 6em;
-}
-
-@media (min-width: 768px) {
-    .b-col {
-        float: right;
-    }
-}
-
-.navbar-default {
-	background-color: #EFEFEF;
-}
-
 .row {
 	margin-bottom: 30px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+#app-list {
+    margin-top: 2em;
 }
 
 .app-faq-image {
@@ -39,6 +33,7 @@ body {
 
 .faq-item-text {
 }
+
 
 #surveyMonkeyInfo {
 	margin-left: auto;

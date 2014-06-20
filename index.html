@@ -1,80 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="intrepidApp">
 <head>
-    <title>Intrepid Logic</title>
+	<title ng-bind="'Intrepid Logic &mdash; ' + title">Intrepid Logic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="intrepidlogic.css" rel="stylesheet" media="screen">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/intrepidlogic.css" rel="stylesheet" media="screen">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.11/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.11/angular-route.min.js"></script>
+
+	<script src="js/min/intrepid.min.js"></script>
+	<!--
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/angular-strap.min.js"></script>
+	-->
 </head>
 
 <body>
-<nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#"><strong>Intrepid Logic</strong></a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							 <li><a href="calibre-cloud-faq.html">Calibre Cloud</a></li>
-						</ul>
-					</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
+<nav class="navbar navbar-default" role="navigation" bs-navbar ng-controller="NavigationCtrl">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle"  ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" title="Toggle navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Intrepid Logic</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-class="!navCollapsed && 'in'">
+			<ul class="nav navbar-nav">
+				<li ng-class="{ active: isActive('/app-list')}"><a href="#/app-list">Home</a></li>
+				<li ng-class="{ active: isActive('/faq/calibre-cloud')}"><a href="#/faq/calibre-cloud">Calibre Cloud FAQ</a></li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
-<!--
-<div class="container-fluid">
-    <div class="jumbotron">
+<div ng-view></div>
 
-    </div>
-</div>
--->
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <a href="#"><img class="img-responsive img-circle center-block" src="images/calibre-cloud.png"></a>
-            <h3 class="text-center">Calibre Cloud</h3>
-            <p>Access your Calibre e-book library from anywhere in the world. Place your calibre library in your Dropbox, Box, or Google Drive folder, and be able to view, search, and download from your library anywhere.</p>
-			<p><a href="calibre-cloud-faq.html"><img class="app-faq-image" src="images/ic_action_help.png" />Frequently Asked Questions</a></p>
-            <a href="https://play.google.com/store/apps/details?id=com.intrepidlogic.calibrecloud">
-                <img alt="Get it on Google Play"
-                     src="images/en_generic_rgb_wo_45.png" />
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#"><img class="img-responsive img-circle center-block" src="images/ez-transmission.png"></a>
-            <h3 class="text-center">EZ Transmission</h3>
-            <p>Keeps you up to date on the latest TV shows. Organizes and displays the EZTV RSS feed and allows you to quickly download shows using uTorrent or Transmission on your computer, or the default android handler for magnet and torrent links. Displays all shows from the EZTV RSS feed for the past 14 or more days.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.intrepidlogic.eztransmission">
-                <img alt="Get it on Google Play"
-                     src="images/en_generic_rgb_wo_45.png" />
-            </a>
-        </div>
-        <div class="col-md-4">
-            <a href="#"><img class="img-responsive img-circle center-block" src="images/reddit-flicks.png"></a>
-            <h3 class="text-center">Reddit Flicks</h3>
-            <p>Specialized reader for Reddit movie subreddits showing full movies posted by users available for streaming. This app parses the title posted and combines with ratings sites for poster and description. Touch any listing to immediately start streaming the movie.
-                Save items as favorites to watch at a later time.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.intrepidlogic.redditflicks">
-                <img alt="Get it on Google Play"
-                     src="images/en_generic_rgb_wo_45.png" />
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -83,7 +51,7 @@
 
   ga('create', 'UA-51747242-1', 'intrepidlogic.com');
   ga('send', 'pageview');
-
 </script>
+
 </body>
 </html>

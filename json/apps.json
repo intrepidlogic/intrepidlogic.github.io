@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Calibre Cloud",
+        "package": "com.intrepidlogic.calibrecloud",
+        "image": "calibre-cloud.png",
+        "descriptions": [
+            "Access your Calibre e-book library from anywhere in the world. Place your calibre library in your Dropbox, Box, or Google Drive folder, and be able to view, search, and download from your library anywhere."
+        ],
+        "links": [
+            {
+                "name": "Frequently Asked Questions",
+                "url": "#/faq/calibre-cloud",
+                "class": "app-faq-image",
+                "image": "ic_action_help.png"
+            }
+        ]
+    },
+    {
+        "name": "EZ Transmission",
+        "package": "com.intrepidlogic.eztransmission",
+        "image": "ez-transmission.png",
+        "descriptions": [
+            "Keeps you up to date on the latest TV shows. Organizes and displays the EZTV RSS feed and allows you to quickly download shows using uTorrent or Transmission on your computer, or the default android handler for magnet and torrent links. Displays all shows from the EZTV RSS feed for the past 14 or more days."
+        ]
+    },
+    {
+        "name": "Reddit Flicks",
+        "package": "com.intrepidlogic.redditflicks",
+        "image": "reddit-flicks.png",
+        "descriptions": [
+            "Specialized reader for Reddit movie subreddits showing full movies posted by users available for streaming. This app parses the title posted and combines with ratings sites for poster and description. Touch any listing to immediately start streaming the movie. Save items as favorites to watch at a later time."
+        ]
+    }
+]

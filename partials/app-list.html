@@ -1,0 +1,14 @@
+<div class="container" id="app-list">
+	<div class="row" ng-repeat="rows in apps | partition:3">
+		<div class="col-md-4" ng-repeat="app in rows">
+			<a href="#"><img class="img-responsive img-circle center-block" ng-src="images/{{ app.image }}"></a>
+			<h3 class="text-center" ng-bind="app.name"></h3>
+			<p ng-repeat="paragraph in app.descriptions" ng-bind="paragraph"></p>
+			<p ng-repeat="link in app.links" ><a href="{{ link.url }}"><img class="{{ link.class }}" ng-src="images/{{ link.image }}" /><span ng-bind="link.name"></span></a></p>
+			<a href="https://play.google.com/store/apps/details?id={{ app.package }}">
+				<img alt="Get it on Google Play"
+					 src="images/en_generic_rgb_wo_45.png" />
+			</a>
+		</div>
+	</div>
+</div>

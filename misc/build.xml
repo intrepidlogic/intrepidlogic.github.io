@@ -1,0 +1,19 @@
+<project name="IntrepidLogic" default="minify" basedir="../">
+
+    <target name="concat-all">
+        <concat destfile="js/min/intrepid.js" encoding="UTF-8" outputencoding="UTF-8" fixlastline="true">
+            <fileset dir="js">
+                <exclude name="min/**"/>
+            </fileset>
+        </concat>
+    </target>
+
+    <target name="minify" depends="concat-all">
+        <java jar="misc/yuicompressor-2.4.8.jar" fork="true">
+            <arg value="js/min/intrepid.js" />
+            <arg value="-o" />
+            <arg value="js/min/intrepid.min.js" />
+        </java>
+    </target>
+
+</project>

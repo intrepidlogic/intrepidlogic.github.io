@@ -1,0 +1,16 @@
+<div class="jumbotron">
+	<img class="center-block img-circle" ng-src="images/{{ data.image }}" />
+</div>
+<div class="container">
+	<div class="row" ng-repeat="rows in data.questions | partition:2">
+		<div class="col-md-6" ng-repeat="question in rows">
+			<div class="faq-item-heading"><a name="{{ question.name }}">
+				<img class="faq-item-image" src="images/ic_action_info.png"/></a><span ng-bind="question.title"></span>
+			</div>
+			<p class="faq-item-text" ng-repeat="paragraph in question.paragraphs" ng-bind="paragraph"></p>
+			<p class="faq-item-text" ng-repeat="link in question.links">
+				<a href="{{ link.url }}" ng-bind="link.name"></a>
+			</p>
+		</div>
+	</div>
+</div>

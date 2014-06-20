@@ -1,0 +1,48 @@
+{
+    "image": "calibre-cloud.png",
+    "title": "Calibre Cloud FAQ",
+    "questions": [
+        {
+            "name": "no-folder",
+            "title": "Why isn't my Calibre folder appearing or selectable?",
+            "paragraphs": [
+                "This is most commonly caused by the cloud storage folder (e.g. Drobox or Google Drive) on your computer not being fully synchronized with the cloud storage service. If you check your computer's task tray you may see that the sync is still occuring. The amount of time it takes to sync varies based on the size of your Calibre library, but in most cases it will complete within 24-48 hours. If the problem persists log into your cloud storage with a web browser and check if there is a file called metadata.db. This metadata.db file is the file that Calibre Cloud is looking for to detect your Calibre Library."
+            ]
+        },
+        {
+            "name": "no-book",
+            "title": "Why aren't books I added to Calibre showing up in Calibre Cloud?",
+            "paragraphs": [
+                "While Calibre is open on your computer any changes you make will not synchronize with the cloud storage until you close Calibre. Try closing Calibre, wait a few minutes, then choose refresh from the action bar menu in Calibre Cloud."
+            ]
+        },
+        {
+            "name": "supported-android",
+            "title": "Which versions of Android are supported by Calibre Cloud?",
+            "paragraphs": [
+                "Calibre Cloud and Calibre Cloud Pro will work on any android device with Android 4.0 (Ice Cream Sandwich) through Android 4.4 (Kit-Kat). The application was developed to also support Kindle devices, however Amazon has declined to allow the appliation be installed on their devices through their app store."
+            ]
+        },
+        {
+            "name": "recommended-cloud",
+            "title": "Which cloud storage service is recommended?",
+            "paragraphs": [
+                "During both development and testing we found that Dropbox provided the best performance and reliability."
+            ]
+        },
+        {
+            "name": "add-cloud",
+            "title": "Will you add support for [insert cloud name]",
+            "paragraphs": [
+                "We live in an age of plenty in regard to cloud storage services. There are hundreds of services available now, and more added each month. We have made an effort to support some of the most frequently used services that offer free storage such as Dropbox, Google Drive, and Box. Developing new support for each service takes a considerable amount of time, so there needs to be many requests for a service before it will be added.",
+                "If you would like to use an unsupported cloud storage service you should check if they offer WebDAV support, and if they do you may be able to use it with Calibre Cloud Pro. If you find out it doesn't work, just email us and we can issue a refund, no questions asked. Another alternative is to use check if the cloud service offers an app to sync with your local device and use the &ldquo;Local Files&rdquo; option available in Calibre Cloud Pro. Vote in the survey below to add your preferred cloud service we will consult the results of this survey whenever we consider adding support for a new storage service."
+            ],
+            "links": [
+                {
+                    "name": "Vote for the next supported cloud storage service",
+                    "url": "https://www.surveymonkey.com/s/VVDV7DX"
+                }
+            ]
+        }
+    ]
+}
