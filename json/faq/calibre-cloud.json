@@ -6,7 +6,7 @@
             "name": "no-folder",
             "title": "Why isn't my Calibre folder appearing or selectable?",
             "paragraphs": [
-                "This is most commonly caused by the cloud storage folder (e.g. Drobox or Google Drive) on your computer not being fully synchronized with the cloud storage service. If you check your computer's task tray you may see that the sync is still occuring. The amount of time it takes to sync varies based on the size of your Calibre library, but in most cases it will complete within 24-48 hours. If the problem persists log into your cloud storage with a web browser and check if there is a file called metadata.db. This metadata.db file is the file that Calibre Cloud is looking for to detect your Calibre Library."
+                "This is most commonly caused by the cloud storage folder (e.g. Drobox or Google Drive) on your computer not being fully synchronized with the cloud storage service. If you check your computer's task tray you may see that the sync is still occurring. The amount of time it takes to sync varies based on the size of your Calibre library, but in most cases it will complete within 24-48 hours. If the problem persists log into your cloud storage with a web browser and check if there is a file called metadata.db. This metadata.db file is the file that Calibre Cloud is looking for to detect your Calibre Library."
             ]
         },
         {
@@ -20,7 +20,7 @@
             "name": "supported-android",
             "title": "Which versions of Android are supported by Calibre Cloud?",
             "paragraphs": [
-                "Calibre Cloud and Calibre Cloud Pro will work on any android device with Android 4.0 (Ice Cream Sandwich) through Android 4.4 (Kit-Kat). The application was developed to also support Kindle devices, however Amazon has declined to allow the appliation be installed on their devices through their app store."
+                "Calibre Cloud and Calibre Cloud Pro will work on any android device with Android 4.0 (Ice Cream Sandwich) through Android 4.4 (Kit-Kat). The application was developed to also support Kindle devices, however Amazon has declined declined the app for installing on Kindle devices, even though they allow it for non-kindle devices in their app store. We continue to try to get an explanation from Amazon for the rejection."
             ]
         },
         {
@@ -42,6 +42,13 @@
                     "name": "Vote for the next supported cloud storage service",
                     "url": "https://www.surveymonkey.com/s/VVDV7DX"
                 }
+            ]
+        },
+        {
+            "name": "download-failed",
+            "title": "Why does it fail when I try to download a book?",
+            "paragraphs": [
+                "This is most commonly caused by the cloud storage folder (e.g. Drobox or Google Drive) on your computer not being fully synchronized with the cloud storage service. If you check your computer's task tray you may see that the sync is still occurring. The amount of time it takes to sync varies based on the size of your Calibre library, but in most cases it will complete within 24-48 hours. After the sync has completed you may want to go into settings and clear the book cover cache."
             ]
         }
     ]
