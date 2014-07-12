@@ -20,7 +20,7 @@
             "name": "supported-android",
             "title": "Which versions of Android are supported by Calibre Cloud?",
             "paragraphs": [
-                "Calibre Cloud and Calibre Cloud Pro will work on any android device with Android 4.0 (Ice Cream Sandwich) through Android 4.4 (Kit-Kat). The application was developed to also support Kindle devices, however Amazon has declined declined the app for installing on Kindle devices, even though they allow it for non-kindle devices in their app store. We continue to try to get an explanation from Amazon for the rejection."
+                "Calibre Cloud and Calibre Cloud Pro will work on any android device with Android 4.0 (Ice Cream Sandwich) through Android 4.4 (Kit-Kat). The application was developed to also support Kindle devices, however Amazon has declined the app for installing on Kindle devices, even though they allow it for non-kindle devices in their app store. We continue to try to get an explanation from Amazon for the rejection."
             ]
         },
         {
